@@ -23,15 +23,11 @@ body {
   .box-wrapper {
     text-align: center;
   }
-
-  .projectbox-info {
-    width: 21.5625rem;
-    height: 5.25rem;
-    background-color: #f3f3f3f9;
-    margin: auto;
-    position: relative;
-    top: -0.25rem;
+  
+  .projectbox1-image {
+    border-radius: 50%;
   }
+
 
   .horoscope-name {
     font-size: 0.875rem;
@@ -44,5 +40,12 @@ body {
     font-size: 0.875rem;
     color: #999;
     position: relative;
-    top: -5.5rem;
+    top: -5.5rem; 
   }
+  body{
+    background-image: url('https://giffiles.alphacoders.com/145/14561.gif');
+    background-size: 1537px 722px;
+    background-repeat: no-repeat;
+    padding:0;
+    margin:0;
+}
