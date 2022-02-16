@@ -25,17 +25,109 @@ body {
     text-align: center;
   }
   
-  .projectbox1-image {
-    border-radius: 50%;
+  .scope1-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    top: -6.0625rem;
   }
-  
+
+  .scope2-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    top: -6.0625rem;
+  }
+
+  .scope3-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    top: -6.0625rem;
+  }
+
+  .scope4-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    top: -6.0625rem;
+  }
+
+  .scope5-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 48.5rem;
+    text-align: right;
+  }
+
+  .scope6-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 48.5rem;
+    text-align: right;
+  }
+
+  .scope7-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 48.5rem;
+    text-align: right;
+  }
+
+  .scope8-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 48.25rem;
+    text-align: right;
+  }
+
+  .scope9-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 58.75rem;
+    text-align: left;
+    left: 240px;
+  }
+
+  .scope10-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 101rem;
+    text-align: left;
+    left: 240px;
+  }
+
+  .scope11-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 111.75rem;
+    text-align: right;
+    right: 240px;
+  }
+
+  .scope12-image {
+    margin: auto;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 90.25rem;
+    text-align: right;
+    right: 240px;
+  }
+
   .horoscope-name {
     font-size: 0.875rem;
     color: #191919;
     position: relative;
     top: -5.0625rem;
   }
-
+  
   .date {
     font-size: 0.875rem;
     color: #999;
@@ -49,3 +141,9 @@ body {
     padding:0;
     margin:0;
 }
+
+  .birthday-selection {
+    position: relative;
+    top: -128rem; 
+    text-align: center;
+  }
