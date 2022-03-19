@@ -1,150 +1,286 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .head h1 {
-    text-align: center;
-    margin: auto;
-    padding: 1.25rem;
-    font-size: 1.625rem;
-    color: #fff;
-  }
-  
-  .head p {
-    text-align: center;
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    top: -1.5625rem;
-    font-size: 0.875rem;
-    color: rgb(218, 218, 218);
-  }
-  
-  .box-wrapper {
-    text-align: center;
-  }
-  
-  .scope1-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    top: -6.0625rem;
-  }
-
-  .scope2-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    top: -6.0625rem;
-  }
-
-  .scope3-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    top: -6.0625rem;
-  }
-
-  .scope4-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    top: -6.0625rem;
-  }
-
-  .scope5-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 48.5rem;
-    text-align: right;
-  }
-
-  .scope6-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 48.5rem;
-    text-align: right;
-  }
-
-  .scope7-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 48.5rem;
-    text-align: right;
-  }
-
-  .scope8-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 48.25rem;
-    text-align: right;
-  }
-
-  .scope9-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 58.75rem;
-    text-align: left;
-    left: 240px;
-  }
-
-  .scope10-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 101rem;
-    text-align: left;
-    left: 240px;
-  }
-
-  .scope11-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 111.75rem;
-    text-align: right;
-    right: 240px;
-  }
-
-  .scope12-image {
-    margin: auto;
-    padding: 1.25rem;
-    position: relative;
-    bottom: 90.25rem;
-    text-align: right;
-    right: 240px;
-  }
-
-  .horoscope-name {
-    font-size: 0.875rem;
-    color: #191919;
-    position: relative;
-    top: -5.0625rem;
-  }
-  
-  .date {
-    font-size: 0.875rem;
-    color: #999;
-    position: relative;
-    top: -5.5rem; 
-  }
-  
-  body {
-    background-image: url('https://giffiles.alphacoders.com/145/14561.gif');
-    background-size: 1537px 722px;
-    background-repeat: no-repeat;
-    padding:0;
-    margin:0;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.background-image {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+  background-size: 1537px 722px;
+}
+.wrapper {
+  padding: 25px;
+}
+.studio-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+.dob-text {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+.dob-details {
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.25rem;
+text-align: center;
+}
+.dob-month-day {
+  font-size: 1.75rem;
+}
+.submit-button {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25rem;
+  padding: 1rem;
+  margin: 3px;
+  border: 3px solid #fff;
+}
+.submit-button:hover {
+  color: #fff;
+  border: 4px solid #fff;
+  cursor: pointer;
 }
 
-  .birthday-selection {
-    position: relative;
-    top: -128rem; 
-    text-align: center;
-  }
+.rectangle {
+  width: 100%;
+  border-radius: 35px;
+}
+.studio-img {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.studio-box {
+  max-width: 180px;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.input-month {
+  color: #fff;
+  font-size: 1.25rem;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  text-align: center;
+}
+.input-day {
+  color: #fff;
+  font-size: 1.25rem;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  text-align: center;
+}
+
+.studio-sub-box {
+  display: none;
+  max-width: 300px;
+  color: #fff;
+  background-color: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+.sign-image-aquarius {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+.sign-name-aquarius {
+  text-align: center;
+  padding: 0 10px 10px 10px;
+}
+.name-of-person-aquarius {
+  text-align: center;
+  padding: 10px
+}
+.person-bio-aquarius {
+  font-size: 1rem;
+padding: 10px;
+}
+/* remover image button background  */
+
+.aquarius-button {
+  background: none;
+}
+.aquarius-button:hover {
+  cursor: pointer;
+}
+
+.pisces-button{
+  background: none;
+}
+.pisces-button:hover {
+  cursor: pointer;
+}
+
+.aries-button {
+  background: none;
+}
+.aries-button:hover {
+  cursor: pointer;
+}
+
+.taurus-button {
+  background: none;
+}
+.taurus-button:hover {
+  cursor: pointer;
+}
+
+.gemini-button {
+  background: none;
+}
+.gemini-button:hover {
+  cursor: pointer;
+}
+
+.cancer-button {
+  background: none;
+}
+.cancer-button:hover {
+  cursor: pointer;
+}
+
+.leo-button {
+  background: none;
+}
+.leo-button:hover {
+  cursor: pointer;
+}
+
+.virgo-button {
+  background: none;
+}
+.virgo-button:hover {
+  cursor: pointer;
+}
+
+.libra-button {
+  background: none;
+}
+.libra-button:hover {
+  cursor: pointer;
+}
+
+.scorpio-button {
+  background: none;
+}
+.scorpio-button:hover {
+  cursor: pointer;
+}
+
+.sagittarius-button {
+  background: none;
+}
+.sagittarius-button:hover {
+  cursor: pointer;
+}
+
+.capricorn-button {
+  background: none;
+}
+.capricorn-button:hover {
+  cursor: pointer;
+}
+
+/* help button */
+
+.help-button-box{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.help-button-icon {
+  border: none;
+  background: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.help-button-close {
+  display: flex;
+  align-self: flex-end;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 10px;
+}
+.help-close-icon {
+  border: none;
+  background: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+}
+.help-box-list {
+  padding:  0 0 0 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.help-box-rectangle {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 35px;
+  margin: 20px 0;
+}
+.help-box-sub-heading {
+  color: #fff;
+  padding: 10px 0 0 20px;
+  font-size: 2rem;
+  text-align: center;
+}
