@@ -8,7 +8,7 @@ let sign = "";
 let img = "";
 let filmName = "";
 let bio = "";
-let helpB = "";
+let helpBtn = "";
 
 const maskAquarius = document.querySelector('.aquarius-button');
 const maskpisces = document.querySelector('.pisces-button');
