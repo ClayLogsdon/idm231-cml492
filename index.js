@@ -28,12 +28,6 @@ function zodiac(){
     const birthmonth = document.getElementById("month").value;
     const birthday = document.getElementById("day").value;
 
-    if (!birthmonth || !birthday){
-      return alert('Please enter date')
-    }
-
-    let result = " unknown because you didn't put a valid date.";
-
     if ((birthmonth == 1 && birthday >= 20) || (birthmonth == 2 && birthday <= 18)){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
@@ -145,24 +139,26 @@ function zodiac(){
           return alert("Please enter correct date!")
       }
 
-  const charOutput = document.querySelector('.mainresult');
-      findCharacter();
+  const filmOutput = document.querySelector('.mainresult');
+      findFilm();
   }
 
-function findCharacter(){
+function findFilm(){
   const signName = document.querySelector('.js-sign-name');
   signName.innerHTML = sign;
 
-  const imageName = document.querySelector('.js-character-img');
+  const imageName = document.querySelector('.js-film-img');
   imageName.src = img;
 
-  const characterName = document.querySelector('.js-character-name-person');
-  characterName.innerHTML = filmName;
+  const characterName = document.querySelector('.js-film-name');
+  characterName.innerHTML = filmName; 
+  
+  // this is the last bit of my old code but for some reason I can't change the characterName to filmName without a problem occuring on the site
 
-  const bioName = document.querySelector('.js-character-bio');
+  const bioName = document.querySelector('.js-film-bio');
   bioName.innerHTML = bio;
 
-  const revealBox = document.querySelector('.js-character-reveal');
+  const revealBox = document.querySelector('.js-film-reveal');
   revealBox.style.display = "block";
 }
 
@@ -196,7 +192,7 @@ maskAquarius.addEventListener('click', function(){
     img = "graphics/aquarius.jpg";
     filmName = "Spirited Away";
       bio = "Your film is Spirited Away!";
-      findCharacter();
+      findFilm();
   });
   maskpisces.addEventListener('click', function(){
     document.getElementsByClassName("zodiac-sub-box").innerHTML
@@ -204,7 +200,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/pisces.jpg";
     filmName="Ponyo";
       bio ="Your film is Ponyo!";
-      findCharacter();
+      findFilm();
      
   });
   maskAries.addEventListener('click', function(){
@@ -213,7 +209,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/aries.jpg";
     filmName="Princess Mononoke";
       bio ="Your film is Princess Mononoke!";
-      findCharacter();
+      findFilm();
     
   });
   maskTaurus.addEventListener('click', function(){
@@ -222,7 +218,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/taurus.jpg";
     filmName="Totoro";    
       bio ="Your film is Totoro!";
-      findCharacter();
+      findFilm();
       
   });
   maskAGemini.addEventListener('click', function(){
@@ -231,7 +227,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/gemini.jpg";
     filmName="Kiki's Delivery Service";
       bio ="Your film is Kiki's Delivery Service!";
-      findCharacter();
+      findFilm();
     
   });
   maskCancer.addEventListener('click', function(){
@@ -240,7 +236,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/cancer.jpg";
     filmName="Secret World of Arriety";
       bio ="Your film is Secret World of Arriety!";
-      findCharacter();
+      findFilm();
     
   });
   maskLeo.addEventListener('click', function(){
@@ -249,7 +245,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/leo.jpg";
     filmName="Graveyard of the Fireflies";
       bio ="Your film is Graveyard of the Fireflies!";
-      findCharacter();
+      findFilm();
     
   });
   maskVirgo.addEventListener('click', function(){
@@ -258,7 +254,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/virgo.jpg";
     filmName="When Marnie Was Here";
       bio ="Your film is When Marnie Was Here!";
-      findCharacter();
+      findFilm();
    
   });
   maskLibra.addEventListener('click', function(){
@@ -267,7 +263,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/libra.jpg";
     filmName="Ocean Waves";
       bio ="Your film is Ocean Waves!";
-      findCharacter();
+      findFilm();
      
   });
   maskScorpio.addEventListener('click', function(){
@@ -276,7 +272,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/scorpio.jpg";
     filmName="Nausicaa of the Valley of the Wind";
       bio ="Your film is Nausicaa of the Valley of the Wind!";
-      findCharacter();
+      findFilm();
    
   });
   maskSagittarius.addEventListener('click', function(){
@@ -285,7 +281,7 @@ maskAquarius.addEventListener('click', function(){
     img="graphics/sagittarius.jpg";
     filmName="Whisper of the Heart";
       bio ="Your film is Whisper of the Heart!";
-      findCharacter();
+      findFilm();
      
   });
   maskCapricorn.addEventListener('click', function(){
@@ -293,8 +289,8 @@ maskAquarius.addEventListener('click', function(){
     sign="Capricorn";
     img="graphics/capricorn.jpg";
     filmName="Howl's Moving Castle";
-      bio ="Your film is Howl's Moving Castle";
-      findCharacter();
+      bio ="Your film is Howl's Moving Castle!";
+      findFilm();
   
   });
 

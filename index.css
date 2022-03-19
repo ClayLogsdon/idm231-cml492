@@ -124,15 +124,14 @@ text-align: center;
   text-align: center;
   padding: 0 10px 10px 10px;
 }
-.name-of-person-aquarius {
+.name-of-film-aquarius {
   text-align: center;
   padding: 10px
 }
-.person-bio-aquarius {
+.film-bio-aquarius {
   font-size: 1rem;
 padding: 10px;
 }
-/* remover image button background  */
 
 .aquarius-button {
   background: none;
